@@ -1,0 +1,23 @@
+{
+  "c2tfc.tab.name": "Torque Link Create to TFC",
+  "block.c2tfc.stress_converter.acacia": "Acacia Stress Converter",
+  "block.c2tfc.stress_converter.ash": "Ash Stress Converter",
+  "block.c2tfc.stress_converter.aspen": "Aspen Stress Converter",
+  "block.c2tfc.stress_converter.birch": "Birch Stress Converter",
+  "block.c2tfc.stress_converter.blackwood": "Blackwood Stress Converter",
+  "block.c2tfc.stress_converter.chestnut": "Chestnut Stress Converter",
+  "block.c2tfc.stress_converter.douglas_fir": "Douglas_Fir Stress Converter",
+  "block.c2tfc.stress_converter.hickory": "Hickory Stress Converter",
+  "block.c2tfc.stress_converter.kapok": "Kapok Stress Converter",
+  "block.c2tfc.stress_converter.mangrove": "Mangrove Stress Converter",
+  "block.c2tfc.stress_converter.maple": "Maple Stress Converter",
+  "block.c2tfc.stress_converter.oak": "Oak Stress Converter",
+  "block.c2tfc.stress_converter.palm": "Palm Stress Converter",
+  "block.c2tfc.stress_converter.pine": "Pine Stress Converter",
+  "block.c2tfc.stress_converter.rosewood": "Rosewood Stress Converter",
+  "block.c2tfc.stress_converter.sequoia": "Sequoia Stress Converter",
+  "block.c2tfc.stress_converter.spruce": "Spruce Stress Converter",
+  "block.c2tfc.stress_converter.sycamore": "Sycamore Stress Converter",
+  "block.c2tfc.stress_converter.white_cedar": "White_Cedar Stress Converter",
+  "block.c2tfc.stress_converter.willow": "Willow Stress Converter"
+}

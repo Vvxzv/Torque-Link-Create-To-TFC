@@ -1,0 +1,6 @@
+{
+  "parent": "c2tfc:block/stress_converter/item",
+  "textures": {
+    "0": "tfc:block/wood/planks/douglas_fir"
+  }
+}

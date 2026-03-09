@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "facing=down,powered=false": {
+      "model": "c2tfc:block/stress_converter/block/kapok",
+      "x": 180
+    },
+    "facing=down,powered=true": {
+      "model": "c2tfc:block/stress_converter/powered/kapok",
+      "x": 180
+    },
+    "facing=east,powered=false": {
+      "model": "c2tfc:block/stress_converter/block/kapok",
+      "x": 90,
+      "y": 90
+    },
+    "facing=east,powered=true": {
+      "model": "c2tfc:block/stress_converter/powered/kapok",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north,powered=false": {
+      "model": "c2tfc:block/stress_converter/block/kapok",
+      "x": 90
+    },
+    "facing=north,powered=true": {
+      "model": "c2tfc:block/stress_converter/powered/kapok",
+      "x": 90
+    },
+    "facing=south,powered=false": {
+      "model": "c2tfc:block/stress_converter/block/kapok",
+      "x": 90,
+      "y": 180
+    },
+    "facing=south,powered=true": {
+      "model": "c2tfc:block/stress_converter/powered/kapok",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up,powered=false": {
+      "model": "c2tfc:block/stress_converter/block/kapok"
+    },
+    "facing=up,powered=true": {
+      "model": "c2tfc:block/stress_converter/powered/kapok"
+    },
+    "facing=west,powered=false": {
+      "model": "c2tfc:block/stress_converter/block/kapok",
+      "x": 90,
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "c2tfc:block/stress_converter/powered/kapok",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

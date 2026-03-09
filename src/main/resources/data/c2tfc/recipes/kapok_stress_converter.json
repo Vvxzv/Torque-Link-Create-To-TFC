@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"result": {
+		"item": "c2tfc:stress_converter/kapok",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"item": "create:shaft"
+		},
+		{
+			"item": "tfc:wood/gear_box/kapok"
+		},
+		{
+			"item": "minecraft:redstone"
+		}
+	]
+}

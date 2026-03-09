@@ -1,0 +1,7 @@
+{
+  "parent": "c2tfc:block/stress_converter/block/ash",
+  "textures": {
+    "3": "c2tfc:block/stress_converter/on_frame",
+    "particle" : "tfc:block/wood/planks/ash"
+  }
+}
