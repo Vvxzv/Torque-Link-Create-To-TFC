@@ -29,7 +29,7 @@ public class C2TFCBlocks {
             String translationKey = "block.c2tfc.stress_converter." + woodType.getSerializedName();
 
             STRESS_CONVERTERS.put(woodType,
-                    C2TFC.REGISTRATE.block(blockId, StressConverter::new)
+                    C2TFC.registrate().block(blockId, StressConverter::new)
                             .initialProperties(SharedProperties::stone)
                             .properties(p -> p.noOcclusion().mapColor(MapColor.PODZOL))
                             .transform(TagGen.axeOrPickaxe())

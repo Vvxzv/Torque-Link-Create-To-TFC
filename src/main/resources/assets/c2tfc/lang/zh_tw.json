@@ -1,0 +1,23 @@
+{
+  "c2tfc.tab.name": "旋力轉接：機械動力 × 群巒",
+  "block.c2tfc.stress_converter.acacia": "金合歡木應力轉換器",
+  "block.c2tfc.stress_converter.ash": "黑梣木應力轉換器",
+  "block.c2tfc.stress_converter.aspen": "山楊木應力轉換器",
+  "block.c2tfc.stress_converter.birch": "白樺木應力轉換器",
+  "block.c2tfc.stress_converter.blackwood": "黑檀木應力轉換器",
+  "block.c2tfc.stress_converter.chestnut": "栗木應力轉換器",
+  "block.c2tfc.stress_converter.douglas_fir": "花旗松木應力轉換器",
+  "block.c2tfc.stress_converter.hickory": "山核桃木應力轉換器",
+  "block.c2tfc.stress_converter.kapok": "木棉木應力轉換器",
+  "block.c2tfc.stress_converter.mangrove": "紅木應力轉換器",
+  "block.c2tfc.stress_converter.maple": "楓木應力轉換器",
+  "block.c2tfc.stress_converter.oak": "橡木應力轉換器",
+  "block.c2tfc.stress_converter.palm": "棕櫚木應力轉換器",
+  "block.c2tfc.stress_converter.pine": "松木應力轉換器",
+  "block.c2tfc.stress_converter.rosewood": "薔薇木應力轉換器",
+  "block.c2tfc.stress_converter.sequoia": "紅杉木應力轉換器",
+  "block.c2tfc.stress_converter.spruce": "雲杉木應力轉換器",
+  "block.c2tfc.stress_converter.sycamore": "懸鈴木應力轉換器",
+  "block.c2tfc.stress_converter.white_cedar": "白雪樅木應力轉換器",
+  "block.c2tfc.stress_converter.willow": "柳木應力轉換器"
+}

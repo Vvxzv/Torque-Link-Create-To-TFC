@@ -35,6 +35,7 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         };
     }
 
+    @Override
     public float getRotationSpeedModifier(Direction direction) {
         return this.hasSource() && direction != this.getSourceFacing() && this.getBlockState().getValue(BlockStateProperties.POWERED) ? 0.0F : 1.0F;
     }
@@ -43,10 +44,12 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         return (float) Config.stressImpact;
     }
 
+    @Override
     public float calculateStressApplied() {
         return this.getBlockState().getValue(BlockStateProperties.POWERED) ? 0.0F : stressImpact();
     }
 
+    @Override
     public void tick() {
         super.tick();
         this.serverTick();
@@ -79,14 +82,17 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         this.performNetworkAction(NetworkAction.REMOVE);
     }
 
+    @Override
     public void markAsInvalidInNetwork() {
         this.invalid = true;
     }
 
+    @Override
     public boolean isInvalidInNetwork() {
         return this.invalid;
     }
 
+    @Override
     public Node getRotationNode() {
         return this.node;
     }
@@ -111,16 +117,19 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         this.isDirty = true;
     }
 
+    @Override
     public final void invalidate() {
         super.invalidate();
         this.onUnloadAdditional();
     }
 
+    @Override
     public final void onChunkUnloaded() {
         super.onChunkUnloaded();
         this.onUnloadAdditional();
     }
 
+    @Override
     public final void onLoad() {
         this.requestModelDataUpdate();
         this.onLoadAdditional();
@@ -153,12 +162,14 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         }
     }
 
+    @Override
     protected void write(CompoundTag compound, boolean clientPacket) {
         super.write(compound, clientPacket);
         this.node.rotation().saveToTag(compound);
         compound.putBoolean("invalid", this.invalid);
     }
 
+    @Override
     protected void read(CompoundTag compound, boolean clientPacket) {
         super.read(compound, clientPacket);
         this.node.rotation().loadFromTag(compound);

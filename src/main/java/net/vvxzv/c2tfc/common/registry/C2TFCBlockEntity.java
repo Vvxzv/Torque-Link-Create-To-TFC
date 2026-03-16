@@ -20,7 +20,7 @@ public class C2TFCBlockEntity {
                 .map(blockEntry -> (NonNullSupplier<Block>) blockEntry::get)
                 .toArray(NonNullSupplier[]::new);
 
-        STRESS_CONVERTER = C2TFC.REGISTRATE
+        STRESS_CONVERTER = C2TFC.registrate()
                 .blockEntity("stress_converter", StressConverterEntity::new)
                 .visual(() -> SplitShaftVisual::new, false)
                 .validBlocks(STRESS_CONVERTER_BLOCKS)
