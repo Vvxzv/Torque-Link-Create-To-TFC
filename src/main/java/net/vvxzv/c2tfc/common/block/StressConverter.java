@@ -27,15 +27,18 @@ public class StressConverter extends DirectionalKineticBlock implements IBE<Stre
         super(properties);
     }
 
+    @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(POWERED);
         super.createBlockStateDefinition(builder);
     }
 
+    @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         return this.defaultBlockState().setValue(FACING, context.getNearestLookingDirection().getOpposite()).setValue(POWERED, false);
     }
 
+    @Override
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, BlockPos fromPos, boolean isMoving) {
         boolean hasSignal = level.hasNeighborSignal(pos);
         if (hasSignal != state.getValue(POWERED)) {
@@ -44,22 +47,27 @@ public class StressConverter extends DirectionalKineticBlock implements IBE<Stre
 
     }
 
+    @Override
     public Direction.Axis getRotationAxis(BlockState blockState) {
         return blockState.getValue(FACING).getAxis();
     }
 
+    @Override
     public boolean hasShaftTowards(LevelReader world, BlockPos pos, BlockState state, Direction face) {
         return face == state.getValue(FACING);
     }
 
+    @Override
     public Class<StressConverterEntity> getBlockEntityClass() {
         return StressConverterEntity.class;
     }
 
+    @Override
     public BlockEntityType<? extends StressConverterEntity> getBlockEntityType() {
         return C2TFCBlockEntity.STRESS_CONVERTER.get();
     }
 
+    @Override
     public void tick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
         BlockEntity var6 = pLevel.getBlockEntity(pPos);
         if (var6 instanceof RotatingBlockEntity entity) {

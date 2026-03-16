@@ -8,6 +8,7 @@ import net.dries007.tfc.util.rotation.Rotation;
 import net.dries007.tfc.util.rotation.SourceNode;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.server.level.ServerLevel;
@@ -35,6 +36,7 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         };
     }
 
+    @Override
     public float getRotationSpeedModifier(Direction direction) {
         return this.hasSource() && direction != this.getSourceFacing() && this.getBlockState().getValue(BlockStateProperties.POWERED) ? 0.0F : 1.0F;
     }
@@ -43,10 +45,12 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         return (float) Config.stressImpact;
     }
 
+    @Override
     public float calculateStressApplied() {
         return this.getBlockState().getValue(BlockStateProperties.POWERED) ? 0.0F : stressImpact();
     }
 
+    @Override
     public void tick() {
         super.tick();
         this.serverTick();
@@ -79,14 +83,17 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         this.performNetworkAction(NetworkAction.REMOVE);
     }
 
+    @Override
     public void markAsInvalidInNetwork() {
         this.invalid = true;
     }
 
+    @Override
     public boolean isInvalidInNetwork() {
         return this.invalid;
     }
 
+    @Override
     public Node getRotationNode() {
         return this.node;
     }
@@ -111,16 +118,19 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         this.isDirty = true;
     }
 
+    @Override
     public final void invalidate() {
         super.invalidate();
         this.onUnloadAdditional();
     }
 
+    @Override
     public final void onChunkUnloaded() {
         super.onChunkUnloaded();
         this.onUnloadAdditional();
     }
 
+    @Override
     public final void onLoad() {
         this.requestModelDataUpdate();
         this.onLoadAdditional();
@@ -153,14 +163,16 @@ public class StressConverterEntity extends SplitShaftBlockEntity implements Rota
         }
     }
 
-    protected void write(CompoundTag compound, boolean clientPacket) {
-        super.write(compound, clientPacket);
+    @Override
+    protected void write(CompoundTag compound, HolderLookup.Provider registries, boolean clientPacket) {
+        super.write(compound, registries, clientPacket);
         this.node.rotation().saveToTag(compound);
         compound.putBoolean("invalid", this.invalid);
     }
 
-    protected void read(CompoundTag compound, boolean clientPacket) {
-        super.read(compound, clientPacket);
+    @Override
+    protected void read(CompoundTag compound, HolderLookup.Provider registries, boolean clientPacket) {
+        super.read(compound, registries, clientPacket);
         this.node.rotation().loadFromTag(compound);
         this.invalid = compound.getBoolean("invalid");
     }

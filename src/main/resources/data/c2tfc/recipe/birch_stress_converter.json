@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"result": {
+		"id": "c2tfc:stress_converter/birch",
+		"count": 1
+	},
+	"ingredients": [
+		{
+			"item": "create:shaft"
+		},
+		{
+			"item": "tfc:wood/gear_box/birch"
+		},
+		{
+			"item": "minecraft:redstone"
+		}
+	],
+	"_kubejs_changed_marker": {
+		"source": "server_scripts:main.js",
+		"line": 29
+	}
+}
