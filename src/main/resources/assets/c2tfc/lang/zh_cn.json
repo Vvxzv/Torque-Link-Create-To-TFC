@@ -19,5 +19,10 @@
   "block.c2tfc.stress_converter.spruce": "云衫木应力转换器",
   "block.c2tfc.stress_converter.sycamore": "悬铃木应力转换器",
   "block.c2tfc.stress_converter.white_cedar": "白雪松木应力转换器",
-  "block.c2tfc.stress_converter.willow": "柳木应力转换器"
+  "block.c2tfc.stress_converter.willow": "柳木应力转换器",
+
+  "c2tfc.ponder.stress_converter.header": "应力转换器",
+  "c2tfc.ponder.stress_converter.text_1": "它可以将机械动力转换为群峦动力",
+  "c2tfc.ponder.stress_converter.text_2": "这里输入机械动力",
+  "c2tfc.ponder.stress_converter.text_3": "你可以在这边接入使用群峦动力的机器了"
 }

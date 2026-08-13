@@ -19,5 +19,10 @@
   "block.c2tfc.stress_converter.spruce": "Spruce Stress Converter",
   "block.c2tfc.stress_converter.sycamore": "Sycamore Stress Converter",
   "block.c2tfc.stress_converter.white_cedar": "White_Cedar Stress Converter",
-  "block.c2tfc.stress_converter.willow": "Willow Stress Converter"
+  "block.c2tfc.stress_converter.willow": "Willow Stress Converter",
+
+  "c2tfc.ponder.stress_converter.header": "Stress Converter",
+  "c2tfc.ponder.stress_converter.text_1": "It can convert create power into tfc power.",
+  "c2tfc.ponder.stress_converter.text_2": "Enter create power here.",
+  "c2tfc.ponder.stress_converter.text_3": "You can now connect machines which use tfc power here."
 }
