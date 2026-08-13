@@ -75,3 +75,10 @@ mandatory=true
 versionRange="[6,)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies."${mod_id}"]]
+modId="ponder"
+mandatory=false
+versionRange="[0,)"
+ordering="AFTER"
+side="BOTH"
